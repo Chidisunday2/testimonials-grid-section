@@ -1,0 +1,131 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+   width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 90rem;
+    background-color: hsl(210, 46%, 95%);
+   padding: 2rem;
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   gap: 1.5rem;
+   border-radius: 1.5rem;
+   
+}
+.card{
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+}
+.card1{
+    grid-area: 1/1/1/3;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+.card2{
+    grid-area: 1/3/2/4;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.card3{
+    grid-area: 2/1/3/1;
+    background-color: white;
+}
+.card4{
+    grid-area: 2/2/3/4;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+.card5{
+    grid-area: 1/4/3/5;
+    background-color: white;
+}
+.info {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+.info img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+}
+.info .data{
+    margin-left: 1.5rem;
+}
+.data h3{
+    margin-bottom: -7px;
+}
+.data .status{
+    color: lightgray;
+}
+.card .comment{
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 2rem;
+}
+q{
+    /* color: gray; */
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+}
+.card3 q, .card5 q{
+    color: gray;
+}
+.card1 q, .card2 q, .card4 q{
+    color: lightgray
+}
+
+@media (max-width:700px){
+    main{
+        width: 30rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+
+    }
+.card1{
+    grid-area: 1/1/2/2;
+    
+}
+.card2{
+    grid-area: 2/1/3/2;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.card3{
+    grid-area: 3/1/4/2;
+    background-color: white;
+}
+.card4{
+    grid-area: 4/1/5/2;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
+.card5{
+    grid-area: 5/1/6/2;
+    background-color: white;
+}
+
+}
+
+
